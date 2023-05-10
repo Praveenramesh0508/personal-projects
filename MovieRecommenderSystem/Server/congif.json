@@ -1,0 +1,13 @@
+{
+    "default_model": null,
+    "conditions": [
+        {
+            "expression": "int(userid) % 2 == 0",
+            "model_id": "model_v1.pkl"
+        },
+        {
+            "expression": "int(userid) % 2 == 1",
+            "model_id": "model_v2.pkl"
+        }
+    ]
+}

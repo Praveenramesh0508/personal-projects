@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file defines the layout for the MovieMate activity. -->
+<!-- Author: Praveen Ramesh-->
+<!-- Andrew ID: pramesh2@andrew.cmu.edu-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <!-- Parent LinearLayout to hold all the UI elements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <!-- Heading for the movie search tab -->
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_heading"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Description -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description" />
+
+    <!-- Search movie field -->
+    <EditText
+        android:id="@+id/searchTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:textColor="#000" />
+
+    <!-- Search submit button -->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_submit" />
+
+    <!-- View to display movie title -->
+    <TextView
+        android:id="@+id/searchTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_title"
+        android:visibility="invisible"
+        />
+
+    <!-- View to display movie overview -->
+    <TextView
+        android:id="@+id/overView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_overview"
+        android:visibility="invisible"/>
+
+    <!-- View to display movie releaseDate -->
+    <TextView
+        android:id="@+id/releaseDateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_release_date"
+        android:visibility="invisible"/>
+
+    <!-- ImageView to display movie poster -->
+    <ImageView
+        android:id="@+id/searchPicture"
+        android:layout_width="165dp"
+        android:layout_height="212dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible" />
+
+    <!-- Heading for the movie recommendations tab -->
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/suggest_heading"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Dropdown to select genre for recommendations -->
+    <Spinner
+        android:id="@+id/genre_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button to submit suggestion request -->
+    <Button
+        android:id="@+id/submitSuggestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suggest_submit"
+        app:layout_constraintTop_toBottomOf="@id/genre_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ImageView to display suggested movie poster -->
+    <ImageView
+        android:id="@+id/suggestionPicture"
+        android:layout_width="179dp"
+        android:layout_height="218dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible" />
+
+    <!-- View to display suggested movie title -->
+    <TextView
+        android:id="@+id/suggestionTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/suggest_title"
+        android:visibility="invisible"
+        />
+
+    <!-- View to display suggested movie rating -->
+    <TextView
+        android:id="@+id/suggestionRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/suggest_rating"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
+</ScrollView>
