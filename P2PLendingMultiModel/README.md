@@ -12,6 +12,8 @@ Four primary investment strategies were examined to establish an optimized lendi
 2. **Default-based**: Employed the previously created classification model to organize loans according to their estimated probability of default and invested in those with the lowest likelihood.
 3. **Return-based**: Developed a regression model (e.g., linear, random forest, neural network regressor) to directly predict the calculated return on historical loans. Subsequently, out-of-sample loans were sorted based on their projected returns, and investments were made in loans with the highest predicted returns.
 4. **Default & Return-based**: Designed two supplementary models – one for estimating the return on loans that did not default and another for determining the return on loans that defaulted. Using the default likelihood predicted by the classification model, the expected value of return from each future loan was computed, and investments were allocated to loans with the highest anticipated returns.
+
+
 ![Image 1](https://github.com/Praveenramesh0508/CMUProjects/blob/main/P2PLendingMultiModel/img1.png)
 
 ![Image 2](https://github.com/Praveenramesh0508/CMUProjects/blob/main/P2PLendingMultiModel/img2.png)
