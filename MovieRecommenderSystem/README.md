@@ -17,6 +17,8 @@ This project was divided into four milestones:
 - Built an infrastructure to assess model and data quality - Timescale Cloud DB
 - Built an infrastructure to evaluate a model in production - Online Evaluation
 - Used continuous integration to test infrastructure and models - GitHub Actions
+
+
 ![Image 1](https://github.com/Praveenramesh0508/CMUProjects/blob/main/MovieRecommenderSystem/img2.png)
 
 ### Milestone 3: Monitoring and Continuous Deployment
