@@ -12,4 +12,4 @@ The project consisted of five components:
 5. **MongoDB Atlas**: A cloud-based storage solution for storing and managing application data, facilitating efficient retrieval and analysis.
 
 MovieMate offered a convenient and personalized movie discovery experience, combining an intuitive Android application with a scalable web service, a powerful third-party API, and robust data storage and analytics capabilities.
-![Image][https://github.com/Praveenramesh0508/CMUProjects/blob/main/MovieMateAppAndWebServer/img.png]
+![Image](https://github.com/Praveenramesh0508/CMUProjects/blob/main/MovieMateAppAndWebServer/img.png)
