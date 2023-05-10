@@ -16,3 +16,4 @@ This part involved the creation of a basic blockchain with several functionaliti
 ### Part 2: Distributed System with Blockchain API
 This part focused on building a distributed system that allowed remote clients to interact with the blockchain API.
 
+![Example Image](https://github.com/Praveenramesh0508/CMUProjects/blob/main/BlockChain/img.png)
